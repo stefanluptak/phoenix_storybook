@@ -4,7 +4,7 @@ defmodule PhoenixStorybook.Web do
   @doc false
   def controller do
     quote do
-      use Phoenix.Controller, namespace: PhoenixStorybook
+      use Phoenix.Controller, formats: [:html]
       import Plug.Conn
       unquote(view_helpers())
     end
